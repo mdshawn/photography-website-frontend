@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_box{
+    background: url("photo.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+#check{
+    display: none;
+}
+.btn_one{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    line-height: 60px;
+    font-weight: 700;
+    left: 10px;
+    
+}
+
+.sidebar_menu{
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: -350px;
+    transition: all 0.5s linear;
+}
+
+.sidebar_menu .btn_two{
+    color: white;
+    font-size: 30px;
+    line-height: 60px;
+    position: absolute;
+    left: 260px;
+}
+.sidebar_menu .logo{
+    width: 100%;
+    position: absolute;
+    left: 60px;
+    
+    
+}
+
+.sidebar_menu .logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    line-height: 40px;
+    line-height: 60px;
+}
+
+.sidebar_menu .menu,a{
+    position: absolute;
+    color: white;
+   
+}
+.sidebar_menu .menu{
+    position: absolute;
+    color: white;
+    width: 300px;
+    top: 80px;
+   
+}
+.sidebar_menu .menu ul li{
+    padding: 20px 40px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+
+}
+.sidebar_menu .menu ul li:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.6);
+}
+
+.sidebar_menu .menu ul li i{
+    padding-right: 30px;
+}
+
+.sidebar_menu .menu ul li a{
+   text-decoration: none;
+}
+.social_media{
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+}
+.social_media li{
+    color: white;
+    padding: 0 15px;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 auto;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+.social_media li:hover{
+    opacity: 1;
+    font-size: 25px;
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+
+#check:checked ~ .btn_one{
+    display: none;
+}
+
+.content{
+    position: absolute;
+    left: 350px;
+}
+.content .slogan{
+    color: white;
+    padding-top: 100px;
+    font-size: 70px;
+}
+.content .join{
+    color: black;
+    background-color: white;
+    width: 300px;
+    height: 100px;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 800;
+    border-radius: 30px;
+    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.6);
+    
+}
+
+.content .text{
+    color: white;
+    font-size: 20px;
+    width: 800px;
+    margin-top: 50px;
+}
+
+.content .album{
+    display: flex;
+    margin-top: 80px;
+}
+
+.content .album .card{
+    width: 300px;
+    height: 200px;
+    border: 2px solid white;
+    margin-right: 50px;
+}
+
+.content .album .card img{
+    width: 100%;
+}
